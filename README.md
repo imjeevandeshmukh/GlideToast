@@ -7,7 +7,7 @@ An Android library to build flying animated toast message.
 
 #### Current release: 1.0
 
-You can see all the library releases [here](https://github.com/imjeevandeshmukh/FancyBottomSheetDialog/releases).
+You can see all the library releases [here](https://github.com/imjeevandeshmukh/GlideToast/releases).
 
 ---
 
@@ -40,38 +40,76 @@ Add this to your root *build.gradle* file:
 Now add the dependency to your app build.gradle file:
 
 ```
- implementation 'com.github.imjeevandeshmukh:FancyBottomSheetDialog:1.0'
+  implementation 'com.github.imjeevandeshmukh:GlideToast:1.0'
 	
 ```
 
-### Creating the dialog with Java
+### Creating the GlideToast with Java
 
 Here is a complete snippet of it usage:
 
 ```java
-new FancyBottomSheetDialog.Builder(this)
-                .setTitle("Alert bottom sheet dialog")
-                .setMessage("This is where we show the information.This is a message.This is where we show message explain or showing the information.")
-                .setBackgroundColor(Color.parseColor("#3F51B5")) //don't use R.color.somecolor
-                .setIcon(R.drawable.ic_pan_tool_black_24dp,true)
-                .isCancellable(false)
-                .OnNegativeClicked(new FancyBottomSheetDialog.FancyBottomSheetDialogListener() {
-                    @Override
-                    public void OnClick() {
+     ###use case 1:Simple GlideToast;
+     
+     1st parameter = Activity
+     2nd parameter = String
+     3rd parameter = int i.e., duration
+     
+     new GlideToast.makeToast(MainActivity.this,"Some random text here", GlideToast.LENGTHLONG).show();
+     
+     ###use case 2:Style GlideToast;
+     
+     1st parameter = Activity
+     2nd parameter = String
+     3rd parameter = int i.e., duration
+     4th parameter = string style i.e., 
+            DEFAULTTOAST
+            SUCCESSTOAST
+            FAILTOAST
+            WARNINGTOAST
+            INFOTOAST
+            CUSTOMTOAST(When you pass in CUSTOMTOAST,you must pass in icon and background color using use case 4 or case 4 construtor)
+     
+    new GlideToast.makeToast(MainActivity.this,"Some random text here", GlideToast.LENGTHLONG,GlideToast.SUCCESSTOAST).show();
+    
+     ###use case 3:Set Gravity to GlideToast;
+     
+      1st parameter = Activity
+     2nd parameter = String
+     3rd parameter = int i.e., duration
+     4th parameter = String style i.e.,6 Options to select from. (default is DEFAULTTOAST)
+            1.DEFAULTTOAST
+            2.SUCCESSTOAST
+            3.FAILTOAST
+            4.WARNINGTOAST
+            5.INFOTOAST
+            6.CUSTOMTOAST(When you pass in CUSTOMTOAST,you must pass in icon and background color using use case 4 or case 4 construtor)
+	    5th parameter = int gravity i.e.,
+	    1.TOP
+	    2.BOTTOM
+	    3.CENTER
+     new GlideToast.makeToast(MainActivity.this,"Some random text here",GlideToast.LENGTHLONG,GlideToast.SUCCESSTOAST,GlideToast.TOP).show();
+     ###use case 4:Custom background color and icon to GlideTOAST;
+     
+     1st parameter = Activity
+     2nd parameter = String
+     3rd parameter = int i.e., duration
+     4th parameter = String style i.e.,6 Options to select from. (default is DEFAULTTOAST)
+            1.DEFAULTTOAST
+            2.SUCCESSTOAST
+            3.FAILTOAST
+            4.WARNINGTOAST
+            5.INFOTOAST
+            6.CUSTOMTOAST(When you pass in CUSTOMTOAST,you must pass in icon and background color using this construtor)
+     5th parameter = int gravity i.e.,
+	    1.TOP
+	    2.BOTTOM
+	    3.CENTER
+     6th parameter = int icon i.e.,drawable icon
+     7th parameter = String color i.e.,pass in hex color code in a string.
+     new GlideToast.makeToast(MainActivity.this,"Some random text here",GlideToast.LENGTHLONG,GlideToast.SUCCESSTOAST,GlideToast.TOP,R.drawable.someicon,"#ffffff").show();
 
-                    }
-                })
-                .OnPositiveClicked(new FancyBottomSheetDialog.FancyBottomSheetDialogListener() {
-                    @Override
-                    public void OnClick() {
-
-                    }
-                })
-                .setNegativeBtnText("Cancel")
-                .setPositiveBtnText("Ok")
-                .setPositiveBtnBackground(Color.parseColor("#3F51B5"))//don't use R.color.somecolor
-                .setNegativeBtnBackground(Color.WHITE)//don't use R.color.somecolor
-                .build();
+     
 ```
 
 ## License
