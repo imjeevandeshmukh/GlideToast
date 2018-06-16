@@ -49,15 +49,17 @@ Now add the dependency to your app build.gradle file:
 Here is a complete snippet of it usage:
 
 ```java
-     ###use case 1:Simple GlideToast;
+### USE CASE 1:Simple GlideToast;
      
      1st parameter = Activity
      2nd parameter = String
      3rd parameter = int i.e., duration
      
+### SAMPLE CODE:
+     
      new GlideToast.makeToast(MainActivity.this,"Some random text here", GlideToast.LENGTHLONG).show();
      
-     ###use case 2:Style GlideToast;
+### USE CASE 2:Style GlideToast;
      
      1st parameter = Activity
      2nd parameter = String
@@ -69,10 +71,14 @@ Here is a complete snippet of it usage:
             WARNINGTOAST
             INFOTOAST
             CUSTOMTOAST(When you pass in CUSTOMTOAST,you must pass in icon and background color using use case 4 or case 4 construtor)
+	    
+### SAMPLE CODE:
+     
      
     new GlideToast.makeToast(MainActivity.this,"Some random text here", GlideToast.LENGTHLONG,GlideToast.SUCCESSTOAST).show();
     
-     ###use case 3:Set Gravity to GlideToast;
+    
+### USE CASE 3:Set Gravity to GlideToast;
      
       1st parameter = Activity
      2nd parameter = String
@@ -88,8 +94,14 @@ Here is a complete snippet of it usage:
 	    1.TOP
 	    2.BOTTOM
 	    3.CENTER
+	    
+### SAMPLE CODE:
+     
+     
      new GlideToast.makeToast(MainActivity.this,"Some random text here",GlideToast.LENGTHLONG,GlideToast.SUCCESSTOAST,GlideToast.TOP).show();
-     ###use case 4:Custom background color and icon to GlideTOAST;
+     
+     
+### USE CASE 4:Custom background color and icon to GlideTOAST;
      
      1st parameter = Activity
      2nd parameter = String
@@ -107,6 +119,10 @@ Here is a complete snippet of it usage:
 	    3.CENTER
      6th parameter = int icon i.e.,drawable icon
      7th parameter = String color i.e.,pass in hex color code in a string.
+     
+ ### SAMPLE CODE:
+       
+       
      new GlideToast.makeToast(MainActivity.this,"Some random text here",GlideToast.LENGTHLONG,GlideToast.SUCCESSTOAST,GlideToast.TOP,R.drawable.someicon,"#ffffff").show();
 
      
