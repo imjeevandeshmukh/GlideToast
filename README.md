@@ -1,5 +1,5 @@
-# DialogSheet
-An Android library to build bottom sheet dialog.
+# GlideToast
+An Android library to build flying animated toast message.
 
 ---
 
