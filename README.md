@@ -12,15 +12,15 @@ You can see all the library releases [here](https://github.com/imjeevandeshmukh/
 ---
 
 ## Screenshots
-<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/default.gif?raw=true" width="350"></kbd>&nbsp;&nbsp;&nbsp;&nbsp;
-<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/success.gif?raw=true" width="350"></kbd>
+<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/default.gif?raw=true" width="200"></kbd>&nbsp;&nbsp;&nbsp;&nbsp;
+<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/success.gif?raw=true" width="200"></kbd>
 
-<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/fail.gif?raw=true" width="350"></kbd>
-<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/info.gif?raw=true" width="350"></kbd>
-<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/warn.gif?raw=true" width="350"></kbd>
-<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/top.gif?raw=true" width="350"></kbd>
-<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/center.gif?raw=true" width="350"></kbd>
-<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/bottom.gif?raw=true" width="350"></kbd>
+<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/fail.gif?raw=true" width="200"></kbd>
+<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/info.gif?raw=true" width="200"></kbd>
+<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/warn.gif?raw=true" width="200"></kbd>
+<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/top.gif?raw=true" width="200"></kbd>
+<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/center.gif?raw=true" width="200"></kbd>
+<kbd><img src="https://github.com/imjeevandeshmukh/GlideToast/blob/master/gifs/bottom.gif?raw=true" width="200"></kbd>
 ---
 Download the sample apk [here](https://github.com/imjeevandeshmukh/GlideToast/raw/master/app-debug.apk).
 
